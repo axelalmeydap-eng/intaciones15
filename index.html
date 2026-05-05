@@ -41,7 +41,10 @@
     cursor: pointer;
   }
 
-  /* 🔥 OCUPA TODA LA PANTALLA */
+  button:hover {
+    background: #ff1493;
+  }
+
   .lista {
     flex: 1;
     width: 100%;
@@ -66,6 +69,14 @@
   .texto {
     font-size: 16px;
     color: #444;
+  }
+
+  /* BOTÓN DORADO */
+  .btn-maps {
+    background: linear-gradient(45deg, gold, #ffd700);
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 10px gold;
   }
 </style>
 
@@ -106,6 +117,13 @@
 
   <div class="item">
     <video src="foto4.mp4" autoplay loop muted></video>
+  </div>
+
+  <!-- BOTÓN GOOGLE MAPS -->
+  <div class="item">
+    <a href="https://maps.app.goo.gl/v6s4vfXHvhCtWia69" target="_blank">
+      <button class="btn-maps">📍 Ver ubicación</button>
+    </a>
   </div>
 
   <div class="item">
