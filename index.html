@@ -6,35 +6,51 @@
 <title>Mis 15 Años</title>
 
 <style>
-  body {
+  html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(to bottom, #ffc0cb, #ffffff);
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
 
   h1 {
-    padding: 20px;
-    font-size: 28px;
+    margin: 10px 0;
+    font-size: 26px;
     color: #d63384;
   }
 
   .sub {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
 
-  /* AHORA OCUPA TODA LA PANTALLA */
-  .lista {
-    width: 95%;
-    max-width: 500px;
-    height: 70vh;
-    margin: auto;
-    overflow-y: auto;
-    background: rgba(255,255,255,0.8);
+  button {
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #ff69b4;
+    color: white;
+    border: none;
     border-radius: 20px;
+    cursor: pointer;
+  }
+
+  /* 🔥 OCUPA TODA LA PANTALLA */
+  .lista {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    background: rgba(255,255,255,0.9);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
   }
 
   .item {
@@ -50,21 +66,6 @@
   .texto {
     font-size: 16px;
     color: #444;
-  }
-
-  button {
-    margin: 10px;
-    padding: 10px 20px;
-    background: #ff69b4;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 15px;
-  }
-
-  button:hover {
-    background: #ff1493;
   }
 </style>
 
